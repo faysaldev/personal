@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- -----------bootstrap------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/JQuery331.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- ----------------glide js--------------- -->
+<link rel="stylesheet" href="css/glide.core.css">
+<link rel="stylesheet" href="css/glide.theme.css">
+<script src="js/glide.min.js"></script>
+
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+
+
+    <script>
+new Glide('.glide',{
+    type: "carousel",
+    startAt: 0,
+    perView:3,
+    gap: 30,
+    autoplay: 2000,
+    hoverpause:true,
+    animationDuration: 800,
+    animationTimingFunc: "linear",
+    breakpoints: {
+        996: {
+            perView: 2,
+        },
+        768: {
+            perView:1,
+        },
+    },
+}).mount();
+    </script>
+  </body>
+</html>
